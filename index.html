@@ -4,157 +4,80 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TCS Energy & Utilities ISU - Deployable Agents</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <title>TCS ERU Agents</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
   <style>
     body {
-      background-color: #f7f7fc;
       font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom right, #004080, #00b4d8);
+      color: white;
     }
+
     .card {
       transition: transform 0.3s ease;
     }
+
     .card:hover {
       transform: translateY(-5px);
     }
   </style>
 </head>
 
-<body class="text-gray-900">
-  <!-- Header -->
-  <header class="bg-gray-900 text-white py-4 px-6 flex justify-between items-center shadow">
-    <h1 class="text-2xl font-bold">TCS Energy & Utilities ISU - Deployable Agents</h1>
-    <nav class="space-x-6">
-      <a href="#demos" class="hover:underline">Demo</a>
-      <a href="#" class="hover:underline">Pricing</a>
-      <a href="#" class="hover:underline">Docs</a>
-      <a href="#" class="bg-purple-600 px-4 py-2 rounded hover:bg-purple-700">Sign Up</a>
-    </nav>
-  </header>
-
-  <!-- Hero -->
-  <section class="text-center py-12">
-    <h2 class="text-4xl font-extrabold">Discover GenAI Applications</h2>
-    <p class="mt-2 text-lg text-gray-600">for Energy, Oil & Gas, Grid, Water, Field Ops</p>
-    <a href="#demos" class="mt-4 inline-block px-6 py-3 bg-purple-600 text-white rounded hover:bg-purple-700">View Demos</a>
+<body>
+  <!-- Hero Section -->
+  <section class="text-center py-24 px-6">
+    <h1 class="text-5xl font-extrabold mb-4">TCS ERU Agents</h1>
+    <p class="text-lg max-w-3xl mx-auto mb-6">
+      Transform your energy utility operations with intelligent AI agents.<br />
+      Optimize efficiency, reduce costs, and enhance sustainability across your entire ERU ecosystem.
+    </p>
+    <a href="#solutions" class="inline-block px-8 py-3 bg-white text-blue-700 font-semibold rounded hover:bg-gray-200">
+      Explore Solutions
+    </a>
   </section>
 
-  <!-- Demo Grid -->
-  <section id="demos" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-6 pb-16">
-    <!-- One card per demo -->
-    <div class="bg-white rounded-lg shadow card p-4 text-center">
-      <h3 class="font-bold text-lg">Asset Integrity GenAI</h3>
-      <button onclick="openModal('https://drive.google.com/file/d/1mXw_KSzUkQQEkC-Se6hfvVLjvdq6FZs2/preview')"
-        class="mt-3 px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700">Open Demo</button>
+  <!-- Solutions Section -->
+  <section id="solutions" class="bg-white text-gray-900 py-16 px-6">
+    <h2 class="text-3xl font-bold text-center mb-10">Featured Agents</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <!-- Example Agent Card -->
+      <div class="bg-gradient-to-b from-blue-50 to-white rounded-lg shadow-lg p-6 card">
+        <div class="text-3xl mb-4">⚙️</div>
+        <h3 class="text-xl font-bold mb-2">Grid Fault Forecast Agent</h3>
+        <p class="text-sm text-gray-700 mb-4">
+          Predict and analyze grid faults using historical data, sensor feeds, and GenAI root cause learning.
+        </p>
+        <div class="text-sm text-gray-600 mb-2">KPIs: Downtime, Fault Frequency</div>
+        <div class="text-sm text-gray-600 mb-4">BENEFITS: Reduces unplanned outages by 25%</div>
+        <button onclick="openModal('https://drive.google.com/file/d/1SPBQ5IaGa5HGVoV59sk8NG9N1GgBfjVv/preview')"
+          class="block mt-4 px-4 py-2 text-center bg-blue-600 text-white rounded hover:bg-blue-700 w-full">
+          Show Demo
+        </button>
+      </div>
+      <!-- Copy more cards like the one above -->
     </div>
-    <div class="bg-white rounded-lg shadow card p-4 text-center">
-      <h3 class="font-bold text-lg">Application Maintenance Agent</h3>
-      <button onclick="openModal('https://drive.google.com/file/d/1t63TO_dKCxp4OQEtIGCW0H2pFbM_5415/preview')"
-        class="mt-3 px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700">Open Demo</button>
-    </div>
-    <div class="bg-white rounded-lg shadow card p-4 text-center">
-      <h3 class="font-bold text-lg">O&G Analytics Agent</h3>
-      <button onclick="openModal('https://drive.google.com/file/d/120WvBpvVF_25F2nkiH4XdYLW1ccVBhI_/preview')"
-        class="mt-3 px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700">Open Demo</button>
-    </div>
-    <div class="bg-white rounded-lg shadow card p-4 text-center">
-      <h3 class=\"font-bold text-lg\">O&G Chemical Formula Agent</h3>
-      <button onclick="openModal('https://drive.google.com/file/d/1_KRZytmdpbN4sd1MZSbUKWnewXmo_Hf1/preview')"
-        class="mt-3 px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700">Open Demo</button>
-    </div>
-    <div class="bg-white rounded-lg shadow card p-4 text-center">
-      <h3 class="font-bold text-lg">Demand Forecasting Agent</h3>
-      <button onclick="openModal('https://drive.google.com/file/d/1lNhrCm-LUGGfDX4MZaqtHueiQmWpvjQD/preview')"
-        class="mt-3 px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700">Open Demo</button>
-    </div>
-    <div class="bg-white rounded-lg shadow card p-4 text-center">
-      <h3 class="font-bold text-lg">O&G Price Forecasting Agent</h3>
-      <button onclick="openModal('https://drive.google.com/file/d/1vEArkW8z5Zuzd7Mf7xmOMPhaIdZK9Eu5/preview')"
-        class="mt-3 px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700">Open Demo</button>
-    </div>
-    <div class="bg-white rounded-lg shadow card p-4 text-center">
-      <h3 class="font-bold text-lg">Drilling Optimization Agent</h3>
-      <button onclick="openModal('https://drive.google.com/file/d/1pDjfChdDflUKlvH7cmG9FBEglUK_jKVI/preview')"
-        class="mt-3 px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700">Open Demo</button>
-    </div>
-    <div class="bg-white rounded-lg shadow card p-4 text-center">
-      <h3 class="font-bold text-lg">Utility Energy Management Agent</h3>
-      <button onclick="openModal('https://drive.google.com/file/d/1Gr2ZFB-eU4ejcuvIRTSVeZcQjyUezZBH/preview')"
-        class="mt-3 px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700">Open Demo</button>
-    </div>
-    <div class="bg-white rounded-lg shadow card p-4 text-center">
-      <h3 class="font-bold text-lg">Energy Trading Agent</h3>
-      <button onclick="openModal('https://drive.google.com/file/d/1j89-N1tF_untMJBvi7YRB9UxCAMKofLd/preview')"
-        class="mt-3 px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700">Open Demo</button>
-    </div>
-    <div class="bg-white rounded-lg shadow card p-4 text-center">
-      <h3 class="font-bold text-lg">Grid Fault Analysis & Forecasting Agent</h3>
-      <button onclick="openModal('https://drive.google.com/file/d/1SPBQ5IaGa5HGVoV59sk8NG9N1GgBfjVv/preview')"
-        class="mt-3 px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700">Open Demo</button>
-    </div>
-    <div class="bg-white rounded-lg shadow card p-4 text-center">
-      <h3 class="font-bold text-lg">Renewable Energy Integration Agent</h3>
-      <button onclick="openModal('https://drive.google.com/file/d/1RQG4eO5fVaKVlJqmhTfEtsZlii8G-tOC/preview')"
-        class="mt-3 px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700">Open Demo</button>
-    </div>
-    <div class="bg-white rounded-lg shadow card p-4 text-center">
-      <h3 class="font-bold text-lg">Reservoir Analysis Agent</h3>
-      <button onclick="openModal('https://drive.google.com/file/d/1Nponfo00hMwNyKu4mCzl5-Yiz9KNU1hM/preview')"
-        class="mt-3 px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700">Open Demo</button>
-    </div>
-    <div class="bg-white rounded-lg shadow card p-4 text-center">
-      <h3 class="font-bold text-lg">O & G Safety Agent</h3>
-      <button onclick="openModal('https://drive.google.com/file/d/1h-BcpStrFXZJvWoKlEkDY85grXrAMCkA/preview')"
-        class="mt-3 px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700">Open Demo</button>
-    </div>
-    <div class="bg-white rounded-lg shadow card p-4 text-center">
-      <h3 class="font-bold text-lg">Water Management Agent</h3>
-      <button onclick="openModal('https://drive.google.com/file/d/1h-BcpStrFXZJvWoKlEkDY85grXrAMCkA/preview')"
-        class="mt-3 px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700">Open Demo</button>
-    </div>
-    <div class="bg-white rounded-lg shadow card p-4 text-center">
-      <h3 class="font-bold text-lg">Streamlining Field Ops Agent</h3>
-      <button onclick="openModal('https://drive.google.com/file/d/1SXb32u7olqubaJ-DuP8AyA9Uw7mJAgja/preview')"
-        class="mt-3 px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700">Open Demo</button>
-    </div>
-    <div class="bg-white rounded-lg shadow card p-4 text-center">
-      <h3 class="font-bold text-lg">Supply Chain Opt Agent</h3>
-      <button onclick="openModal('https://drive.google.com/file/d/15k-G-GWDHEaT4n28oLTC2QlZjJzbHit_/preview')"
-        class="mt-3 px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700">Open Demo</button>
-    </div>
-    <div class="bg-white rounded-lg shadow card p-4 text-center">
-      <h3 class="font-bold text-lg">Support Helper Agent</h3>
-      <button onclick="openModal('https://drive.google.com/file/d/1V2QwmwqJebf-fj4wLCow20hlIhq-wMSj/preview')"
-        class="mt-3 px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700">Open Demo</button>
-    </div>
-    <div class="bg-white rounded-lg shadow card p-4 text-center">
-      <h3 class="font-bold text-lg">Water LLM Storm Simulator</h3>
-      <button onclick="openModal('https://drive.google.com/file/d/17j_SFOBoDi3dWkTCbS_nA29taPs_wB3G/preview')"
-        class="mt-3 px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700">Open Demo</button>
-    </div>
-    <!-- Add more cards as needed -->
   </section>
 
   <!-- Modal -->
-  <div id="modal" class="fixed inset-0 hidden items-center justify-center bg-black bg-opacity-70 z-50">
-    <div class="bg-white p-6 rounded shadow-xl max-w-3xl w-full relative">
+  <div id="modal" class="fixed inset-0 hidden items-center justify-center bg-black bg-opacity-75 z-50">
+    <div class="bg-white rounded-lg shadow-lg max-w-3xl w-full p-6 relative">
       <iframe id="modalVideo" src="" class="w-full h-96" allowfullscreen></iframe>
-      <button onclick="closeModal()"
-        class="absolute top-2 right-2 text-red-600 font-bold text-xl">&times;</button>
+      <button onclick="closeModal()" class="absolute top-2 right-4 text-2xl text-red-600 font-bold">&times;</button>
     </div>
   </div>
 
+  <!-- Modal Script -->
   <script>
     function openModal(url) {
-      document.getElementById('modalVideo').src = url;
-      document.getElementById('modal').classList.remove('hidden');
-      document.getElementById('modal').classList.add('flex');
+      document.getElementById("modalVideo").src = url;
+      document.getElementById("modal").classList.remove("hidden");
+      document.getElementById("modal").classList.add("flex");
     }
 
     function closeModal() {
-      document.getElementById('modalVideo').src = "";
-      document.getElementById('modal').classList.remove('flex');
-      document.getElementById('modal').classList.add('hidden');
+      document.getElementById("modalVideo").src = "";
+      document.getElementById("modal").classList.add("hidden");
+      document.getElementById("modal").classList.remove("flex");
     }
   </script>
 </body>
